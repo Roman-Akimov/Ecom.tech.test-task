@@ -7,7 +7,9 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-white/20 bg-white/30 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-        <img src="ecom.png" alt="Ecom.tech Logo" className="h-5 min-[480px]:h-6 min-[768px]:h-8" />
+        <a href="#">
+          <img src="ecom.png" alt="Ecom.tech Logo" className="h-6 w-50 min-[480px]:h-6 min-[768px]:h-8" />
+        </a>
 
         <SearchBar />
 

@@ -25,7 +25,7 @@ export const ProductModal = () => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-md rounded-xl bg-white p-4 shadow-xl transition-all duration-300 sm:max-w-lg sm:p-6 md:max-w-4xl"
+        className="relative w-full max-w-md rounded-2xl rounded-xl bg-white p-4 p-6 shadow-2xl shadow-xl transition-all duration-300 sm:max-w-lg sm:p-6 md:max-w-4xl dark:border dark:border-white/10 dark:bg-slate-900"
       >
         <button
           className="absolute top-4 right-4 flex h-8 w-8 items-center justify-center rounded-full text-gray-500 transition hover:bg-gray-100 hover:text-black"

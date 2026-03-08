@@ -17,10 +17,10 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 
   return (
     <article
-      className="rounded-xl border border-gray-200 shadow-lg transition-all duration-500 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md"
+      className="rounded-xl border shadow-lg transition-all duration-500 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md"
       onClick={handleOpenModal}
     >
-      <div className="relative aspect-square w-full overflow-hidden rounded-t-xl bg-white/50 p-4">
+      <div className="relative aspect-square w-full overflow-hidden rounded-t-xl bg-white/90 p-4">
         <img
           src={product.image}
           alt={product.title}
@@ -35,9 +35,9 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           <h3 className="text-sm font-semibold">{product.title}</h3>
         </header>
         <footer className="mt-4 flex items-center justify-between pt-2">
-          <span className="text-base font-bold text-slate-900">{product.price.toLocaleString()} Руб</span>
+          <span className="text-base font-bold">{product.price.toLocaleString()} Руб</span>
 
-          <button onClick={handleBuyClick} className="rounded-md border px-3 py-1 text-sm transition hover:bg-gray-200">
+          <button onClick={handleBuyClick} className="rounded-md border px-3 py-1 text-sm transition hover:bg-gray-100">
             {t('buy')}
           </button>
         </footer>

@@ -39,7 +39,7 @@ export const ProductList = () => {
       </div>
 
       {filtered.length === 0 && (
-        <div className="flex h-64 items-center justify-center text-slate-500">По вашему запросу ничего не найдено</div>
+        <div className="flex h-64 items-center justify-center text-slate-500">{t('not_found')}</div>
       )}
     </section>
   );
