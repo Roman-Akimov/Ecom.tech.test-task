@@ -16,20 +16,30 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   };
 
   return (
-    <article onClick={handleOpenModal}>
-      {/** Изображение */}
-      <div>
-        <img src={product.image} alt={product.title}></img>
+    <article
+      className="rounded-xl border border-gray-200 shadow-lg transition-all duration-500 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md"
+      onClick={handleOpenModal}
+    >
+      <div className="relative aspect-square w-full overflow-hidden rounded-t-xl bg-white/50 p-4">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="h-full w-full object-contain transition-transform duration-500 hover:scale-105"
+        ></img>
       </div>
-      {/** Контент */}
-      <div>
+
+      <div className="flex flex-col gap-2 p-4">
         <header>
-          <small>{product.category}</small>
-          <h3>{product.title}</h3>
+          <small className="text-xs text-gray-500">{product.category}</small>
+
+          <h3 className="text-sm font-semibold">{product.title}</h3>
         </header>
-        <footer>
-          <span>{product.price.toLocaleString()} Р</span>
-          <button onClick={handleBuyClick}>{t('buy')}</button>
+        <footer className="mt-4 flex items-center justify-between pt-2">
+          <span className="text-base font-bold text-slate-900">{product.price.toLocaleString()} Руб</span>
+
+          <button onClick={handleBuyClick} className="rounded-md border px-3 py-1 text-sm transition hover:bg-gray-200">
+            {t('buy')}
+          </button>
         </footer>
       </div>
     </article>

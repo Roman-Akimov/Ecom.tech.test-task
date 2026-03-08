@@ -3,19 +3,19 @@ import type { Product } from '../types/product';
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: 1,
-    title: 'Смартфон Xiaomi Redmi Note 12',
-    price: 24999,
-    category: 'electronics',
-    image: 'https://avatars.mds.yandex.net/get-mpic/1674591/img_id938238860298449761.jpeg/orig',
-    description: '6.67-дюймовый AMOLED дисплей, процессор Snapdragon 685, основная камера 50 Мп, аккумулятор 5000 мАч',
-  },
-  {
-    id: 2,
     title: 'Наушники Sony WH-1000XM4',
     price: 27990,
     category: 'electronics',
     image: 'https://avatars.mds.yandex.net/i?id=0d7b08e5e94747bf573f573c485fb2c8_l-5651721-images-thumbs&n=13',
     description: 'Беспроводные наушники с активным шумоподавлением, до 30 часов работы, быстрая зарядка',
+  },
+  {
+    id: 2,
+    title: 'Смартфон Xiaomi Redmi Note 12',
+    price: 24999,
+    category: 'electronics',
+    image: 'https://avatars.mds.yandex.net/get-mpic/1674591/img_id938238860298449761.jpeg/orig',
+    description: '6.67-дюймовый AMOLED дисплей, процессор Snapdragon 685, основная камера 50 Мп, аккумулятор 5000 мАч',
   },
   {
     id: 3,

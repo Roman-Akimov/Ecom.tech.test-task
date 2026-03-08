@@ -13,6 +13,7 @@ const resources = {
       loading: 'Загрузка...',
       error: 'Ошибка',
       contacts: 'Контакты:',
+      main_page: 'Главная страница',
     },
   },
   en: {
@@ -26,6 +27,7 @@ const resources = {
       loading: 'Loading...',
       error: 'Error',
       contacts: 'Contacts:',
+      main_page: 'Main page',
     },
   },
 };

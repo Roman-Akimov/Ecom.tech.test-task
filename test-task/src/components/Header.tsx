@@ -1,22 +1,30 @@
-//import { useTranslation } from 'react-i18next';
 import { useAppStore } from '../store/useAppStore';
 import { SearchBar } from './SearchBar';
 
 export const Header = () => {
-  //const { t } = useTranslation();
   const { theme, toggleTheme, lang, toggleLang } = useAppStore();
 
   return (
-    <header style={{ borderBottom: '1px solid #ccc', padding: '20px 20px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ fontWeight: 'bold' }}>Ecom.tech</div>
+    <header className="sticky top-0 z-50 border-b border-white/20 bg-white/30 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+        <img src="ecom.png" alt="Ecom.tech Logo" className="h-5 min-[480px]:h-6 min-[768px]:h-8" />
 
         <SearchBar />
 
-        <div style={{ display: 'flex', gap: '10px' }}>
-          <button onClick={toggleLang}>{lang.toUpperCase()}</button>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={toggleLang}
+            className="rounded-lg bg-white/40 px-3 py-1 text-sm font-medium backdrop-blur-md transition hover:bg-white/60"
+          >
+            {lang.toUpperCase()}
+          </button>
 
-          <button onClick={toggleTheme}>{theme === 'light' ? '🌙' : '☀️'}</button>
+          <button
+            onClick={toggleTheme}
+            className="rounded-lg bg-white/40 px-3 py-1 text-sm backdrop-blur-md transition hover:bg-white/60"
+          >
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
         </div>
       </div>
     </header>
