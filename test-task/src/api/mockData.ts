@@ -58,7 +58,7 @@ export const MOCK_PRODUCTS: Product[] = [
     description: 'Always-On Retina дисплей, S9 SiP, мониторинг здоровья, фитнес-трекинг, GPS + Cellular',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Смарт-часы Apple Watch Series 7',
     price: 29990,
     category: 'electronics',

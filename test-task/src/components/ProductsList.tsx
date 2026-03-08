@@ -10,7 +10,9 @@ export const ProductList = () => {
 
   const searchQuery = useAppStore((store) => store.searchQuery);
 
-  const filtered = products?.filter((p) => p.title.toLowerCase().includes(searchQuery.toLowerCase()));
+  const uniqueProducts = Array.from(new Map(products?.map((item) => [item.id, item])).values());
+
+  const filtered = uniqueProducts.filter((p) => p.title.toLowerCase().includes(searchQuery.toLowerCase()));
 
   if (isLoading) {
     return <div>{t('loading')}</div>;
@@ -20,7 +22,7 @@ export const ProductList = () => {
   }
 
   return (
-    <div>
+    <div className="grid grid-cols-1 gap-4 p-10 min-[480px]:grid-cols-2 min-[768px]:grid-cols-4">
       {filtered?.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
