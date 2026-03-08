@@ -1,3 +1,7 @@
-function App() {}
-
-export default App;
+export function App() {
+  return (
+    <div>
+      <p>Hello</p>
+    </div>
+  );
+}
