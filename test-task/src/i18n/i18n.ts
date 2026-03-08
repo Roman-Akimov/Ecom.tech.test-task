@@ -4,12 +4,28 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   ru: {
     translation: {
-      searchPlaceholder: 'Поиск товаров..',
+      searchPlaceholder: 'Поиск товаров...',
+      buy: 'Купить',
+      price: 'Цена',
+      notFound: 'Товары не найдены',
+      close: 'Закрыть',
+      category: 'Категория',
+      loading: 'Загрузка...',
+      error: 'Ошибка',
+      contacts: 'Контакты:',
     },
   },
   en: {
     translation: {
-      searchPlaceholder: 'Search products..',
+      searchPlaceholder: 'Search products...',
+      buy: 'Buy',
+      price: 'Price',
+      notFound: 'No products found',
+      close: 'Close',
+      category: 'Category',
+      loading: 'Loading...',
+      error: 'Error',
+      contacts: 'Contacts:',
     },
   },
 };

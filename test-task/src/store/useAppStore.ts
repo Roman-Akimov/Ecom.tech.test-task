@@ -9,7 +9,7 @@ interface AppState {
   searchQuery: string;
   selectedProduct: Product | null;
   toggleTheme: () => void;
-  toggleLang: (lang: 'ru') => void;
+  toggleLang: () => void;
   setSearchQuery: (query: string) => void;
   setProduct: (product: Product | null) => void;
 }
