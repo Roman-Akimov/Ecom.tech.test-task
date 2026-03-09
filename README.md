@@ -1,1 +1,30 @@
-# Ecom.tech.test-task
+# Тестовое задание на стажировку
+## Ecom.tech.test-task
+Тестовое задание:
+Создать небольшое одностраничное приложение, которое выводит список товаров, позволяет отфильтровать их по названию и посмотреть подробную информацию о выбранном товаре в модальном окне.
+## Стек технологий:
+React + Vite, TypeScript, Tailwind CSS v4, Zustan, i18next (Локализация), 
+TanStack Query, Husky, ESlint, Prettier.
+RU и Light
+<img width="1690" height="957" alt="image" src="https://github.com/user-attachments/assets/c2c0324e-e670-46b3-9676-c401ed13bab9" />
+<img width="1690" height="957" alt="image" src="https://github.com/user-attachments/assets/c2c0324e-e670-46b3-9676-c401ed13bab9" />
+EN и Dark
+<img width="1609" height="960" alt="image" src="https://github.com/user-attachments/assets/933173fe-aa25-4f7d-af70-84c6ceb44ee4" />
+<img width="1609" height="960" alt="image" src="https://github.com/user-attachments/assets/933173fe-aa25-4f7d-af70-84c6ceb44ee4" />
+
+Выбор технологий и информация о фичах:
+1. Написание стилей осуществил на Tailwind, так как проект небольшой и он не требует возможзностей module.scss.
+2. Локализация. Сделал в целях повторить навыки, полученные на работе.
+3. Адаптивная верстка. Постарался сделать стили максимально приятными и корректными под разные устройства.
+4. Закрытие модалок по клику вне окна и по кнопке Esc.
+5. Выбранная тема и язык сохраняются после перезагрузки страницы (LocalStorage).
+
+## Обоснование архитектурных решений.
+Выбрал Zustand, так как он легковесный и очень прост в применении. Подходит для таких маленьких проектов.
+Для смены темы в приложении был использован @custom-variant, что позволило реализовать переключение темы через JS-стейт.
+
+# Инструкция.
+git clone https://github.com/stanislav-sbone/Ecom.tech-tesk-task.git
+pnpm i
+pnpm run dev
+
