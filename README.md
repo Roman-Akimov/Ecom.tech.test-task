@@ -5,14 +5,12 @@
 ## Стек технологий:
 React + Vite, TypeScript, Tailwind CSS v4, Zustan, i18next (Локализация), 
 TanStack Query, Husky, ESlint, Prettier.
-RU и Light
+###RU и Light
 <img width="1690" height="957" alt="image" src="https://github.com/user-attachments/assets/c2c0324e-e670-46b3-9676-c401ed13bab9" />
-<img width="1690" height="957" alt="image" src="https://github.com/user-attachments/assets/c2c0324e-e670-46b3-9676-c401ed13bab9" />
-EN и Dark
-<img width="1609" height="960" alt="image" src="https://github.com/user-attachments/assets/933173fe-aa25-4f7d-af70-84c6ceb44ee4" />
+###EN и Dark
 <img width="1609" height="960" alt="image" src="https://github.com/user-attachments/assets/933173fe-aa25-4f7d-af70-84c6ceb44ee4" />
 
-Выбор технологий и информация о фичах:
+## Выбор технологий и информация о фичах:
 1. Написание стилей осуществил на Tailwind, так как проект небольшой и он не требует возможзностей module.scss.
 2. Локализация. Сделал в целях повторить навыки, полученные на работе.
 3. Адаптивная верстка. Постарался сделать стили максимально приятными и корректными под разные устройства.
