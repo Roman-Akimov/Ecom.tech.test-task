@@ -23,7 +23,7 @@ TanStack Query, Husky, ESlint, Prettier.
 Для смены темы в приложении был использован @custom-variant, что позволило реализовать переключение темы через JS-стейт.
 
 # Инструкция.
-## git clone https://github.com/stanislav-sbone/Ecom.tech-tesk-task.git
+## git clone https://github.com/Roman-Akimov/Ecom.tech.test-task.git
 
 ## pnpm i
 
